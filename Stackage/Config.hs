@@ -655,6 +655,9 @@ defaultStablePackages ghcVer requireHP = unPackageMap $ execWriter $ do
     mapM_ (add "Joey Eremondi <joey@eremondi.com>") $ words
        "prettyclass"
 
+    mapM_ (add "Kostiantyn Rybnikov <k-bx@k-bx.com>") $ words
+        "url"
+
     -- https://github.com/fpco/stackage/issues/217
     addRange "Michael Snoyman" "transformers" "< 0.4"
     addRange "Michael Snoyman" "mtl" "< 2.2"
